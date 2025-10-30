@@ -1,0 +1,26 @@
+<!-- O pagină web care schimbă culoarea de fundal când apeși un buton -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schimbă culoarea de fundal</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Schimbă culoarea de fundal</h1>
+<button onclick="schimbaCuloarea()">Apasă-mă!</button>
+
+<script>
+    function schimbaCuloarea() {
+        const culori = ['red', 'blue', 'green', 'yellow', 'purple'];
+        const culoareAleasa = culori[Math.floor(Math.random() * culori.length)];
+        document.body.style.backgroundColor = culoareAleasa;
+    }
+</script>
+
+</body>
+</html>
